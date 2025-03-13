@@ -22,7 +22,7 @@ Check "device manager", if it looks like below (sorry for mandarin UI, icon is t
 ![image](https://github.com/KurtDing/LabMUSplayer/blob/main/no_midi_solve/unavalible.JPG)  
 meaning Microsoft GS Wavetable Synth is not available  
 It could soulve by install/update sound chip driver, then "device manager" will be like this  
-OR install some other MIDI player  
+OR install some other MIDI player like VirtualMIDISynth  
 ![image](https://github.com/KurtDing/LabMUSplayer/blob/main/no_midi_solve/avalible.JPG)  
 ***  
 
