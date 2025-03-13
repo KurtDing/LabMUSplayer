@@ -21,7 +21,7 @@ Or reach Github: Sylvain-Deposit/LabWad
 Check "device manager", if it looks like below (sorry for mandarin UI, icon is the same)  
 ![image](https://github.com/KurtDing/LabMUSplayer/blob/main/no_midi_solve/unavalible.JPG)  
 meaning Microsoft GS Wavetable Synth is not available  
-It could soulve by install/update sound chip driver, then "device manager" will be like this
+It could soulve by install/update sound chip driver, then "device manager" will be like this  
 OR install some other MIDI player  
 ![image](https://github.com/KurtDing/LabMUSplayer/blob/main/no_midi_solve/avalible.JPG)  
 ***  
