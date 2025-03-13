@@ -1,12 +1,15 @@
 import time
 import ctypes
 
+
 # 載入 winmm.dll
 winmm = ctypes.WinDLL("winmm.dll")
 
 # 開啟 MIDI 裝置
 midi_out = ctypes.c_void_p(0)
-winmm.midiOutOpen(ctypes.byref(midi_out), 0, 0, 0, 0)
+print('Available MIDI devices: ', winmm.midiOutGetNumDevs())
+midiopen = winmm.midiOutOpen(ctypes.byref(midi_out), 0, 0, 0, 0)
+print('midi open return message: ', midiopen)
 
 # 發送 MIDI 訊息
 def midi_send(message):
@@ -36,11 +39,11 @@ for _ in range(2):
 time.sleep(0.5)
 
 # 更換音色 (鳥叫: MIDI 音色 123)
-midi_send(0xC0 | (122 << 8))  # 更改樂器為 "Bird Tweet"
+midi_send(0xC0 | (123 << 8))  # 更改樂器為 "Bird Tweet"
 time.sleep(0.1)
 
 # 播放鳥叫 (MIDI note 76)
-midi_send(0x90 | (76 << 8) | (127 << 16))  # Note On
+midi_send(0x90 | (52 << 8) | (127 << 16))  # Note On
 time.sleep(0.5)
 midi_send(0x80 | (76 << 8))  # Note Off
 
