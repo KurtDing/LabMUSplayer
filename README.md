@@ -1,6 +1,6 @@
 # doom_MUS_decode_play
 Play MUS data from doom WAD by windows intrinsic MIDI dll  
-Midi devide checking function added in new vi and python sammple 
+Midi devide checking function added in new vi and python sammple  
 If number returns 0 mmeans no MIDI device is available, typical is 1
 
 Small project to re-gen the type-0 MIDI data from MUS in any id Tech1 WAD file  
